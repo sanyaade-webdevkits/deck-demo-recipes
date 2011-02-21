@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Front</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Photo Group ********** -->
+    <block type="function" source-id="photo">
+      <photo>Photos/Card3-Front.jpg</photo>
+      <photoBlur>Photos/Card3-Front-Blur.jpg</photoBlur>
+    </block>
+    <!-- *********** Recipe Level Group ********** -->
+    <block type="function" source-id="recipeLevel">
+      <level>Level  2</level>
+      <time>90 mins</time>
+    </block>
+    <!-- *********** Menu Name Gloup ********** -->
+    <!-- name Group Portrait -->
+    <block type="function" source-id="namePortrait">
+      <plateSize>450px 120px</plateSize>
+      <title>Tiramisu</title>
+    </block>
+    <!-- Round Group Landscape -->
+    <block type="function" source-id="nameLandscape">
+      <title>Tiramisu</title>
+    </block>
+    <!-- Ingredients -->
+    <block type="function" source-id="ingredients">
+    </block>
+    <!-- *********** Ingredients ********** -->
+    <block type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>500px 550px</size>
+        <position>220px 30px</position>
+      </state>
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- List Group 1 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 0px</listPosition>
+          <ingredients>4 eggs, separated</ingredients>
+        </block>
+        <!-- List Group 2 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 50px</listPosition>
+          <ingredients>250g mascarpone</ingredients>
+        </block>
+        <!-- List Group 3 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 100px</listPosition>
+          <ingredients>200g caster sugar</ingredients>
+        </block>
+        <!-- List Group 4 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 150px</listPosition>
+          <ingredients>1 tsp vanilla extract</ingredients>
+        </block>
+        <!-- List Group 5 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 200px</listPosition>
+          <ingredients>1 cup freshly brewed, extra strong coffee, cooled</ingredients>
+        </block>
+        <!-- List Group 6 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 250px</listPosition>
+          <ingredients>2 tbsp liquer (Kahlua or Marsala)</ingredients>
+        </block>
+        <!-- List Group 7 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 300px</listPosition>
+          <ingredients>sponge fingers</ingredients>
+        </block>
+        <!-- List Group 8 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 350px</listPosition>
+          <ingredients>A small block of semi-sweet chocolate</ingredients>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

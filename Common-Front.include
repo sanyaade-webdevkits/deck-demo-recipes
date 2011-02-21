@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+  <function-blocks>
+    <!-- *********** Photo Group ********** -->
+    <block type="group" id="photo">
+      <blocks>
+        <!-- Photo Portrait-->
+        <block type="image" referential-anchor="center-left" anchor="center-left" autosize="yes">
+          <state id="portrait">
+            <scale>1.0</scale>
+          </state>
+          <state id="landscape">
+            <scale>1.2</scale>
+          </state>
+          <image>@photo</image>
+        </block>
+        <!-- Photo Blur Landscape -->
+        <block type="image" referential-anchor="center-left" anchor="center-left" autosize="yes">
+          <state id="portrait">
+            <opacity>0.0</opacity>
+          </state>
+          <state id="landscape">
+            <opacity>1.0</opacity>
+            <scale>1.2</scale>
+          </state>
+          <autosizing>aspect-fit</autosizing>
+          <image>@photoBlur</image>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Recipe Level Group ********** -->
+    <block type="group" id="recipeLevel" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>270px 140px</size>
+      </state>
+      <state id="portrait">
+        <position>0px 0px</position>
+      </state>
+      <state id="landscape">
+        <position>0px -200px</position>
+      </state>
+      <blocks>
+        <!--  Round Image  -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <image>round-small.png</image>
+        </block>
+        <!-- Level icon -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>20px 20px</position>
+          </state>
+          <image>icon-level.png</image>
+        </block>
+        <!-- Level text -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <position>60px 20px</position>
+            <size>100px 30px</size>
+          </state>
+          <font>
+            <name>Times New Roman Bold</name>
+            <size>26px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>0.4 0.4 0.4</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@level</string>
+        </block>
+        <!-- Time icon -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>20px 60px</position>
+          </state>
+          <image>icon-time.png</image>
+        </block>
+        <!-- Time text -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <position>60px 60px</position>
+            <size>100px 30px</size>
+          </state>
+          <font>
+            <name>Times New Roman Bold</name>
+            <size>26px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>0.4 0.4 0.4</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@time</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Menu Name Group ********** -->
+    <!-- name Group Portrait -->
+    <block type="group" id="namePortrait" referential-anchor="bottom-right" anchor="bottom-right">
+      <state id="portrait">
+        <position>0px -50px</position>
+        <size>@plateSize</size>
+      </state>
+      <state id="landscape">
+        <position>0px 200px</position>
+        <size>@plateSize</size>
+      </state>
+      <blocks>
+        <!--  Overray Plate -->
+        <block type="group" id="overray" referential-anchor="bottom-right" anchor="bottom-right">
+          <state>
+            <opacity>0.8</opacity>
+          </state>
+          <background-color>0.25 0.9 0.15</background-color>
+        </block>
+        <!-- How to -->
+        <block type="string" id="howto" referential-anchor="bottom-right" anchor="bottom-right">
+          <state>
+            <position>-20px -10px</position>
+            <size>170px 35px</size>
+            <opacity>0.8</opacity>
+          </state>
+          <font>
+            <name>Times New Roman</name>
+            <size>30px</size>
+          </font>
+          <paragraph-style>
+            <alignment>right</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <string>How to make</string>
+        </block>
+        <!-- Name -->
+        <block type="string" referential-id="howto" referential-anchor="top-right" anchor="bottom-right">
+          <state>
+            <size>-30px -50px</size>
+          </state>
+          <font>
+            <name>Times New Roman</name>
+            <size>60px</size>
+          </font>
+          <paragraph-style>
+            <alignment>right</alignment>
+            <line-height-multiple>0.9</line-height-multiple>
+            <line-breaking>wrap-words</line-breaking>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <string>@title</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- Round Group Landscape -->
+    <block type="group" id="nameLandscape" referential-anchor="top-right" anchor="top-right">
+      <state>
+        <size>270px 628px</size>
+      </state>
+      <state id="portrait">
+        <position>300px 0px</position>
+      </state>
+      <state id="landscape">
+        <position>0px 0px</position>
+      </state>
+      <blocks>
+        <!-- Round Image -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <image>round-big.png</image>
+        </block>
+        <!-- Name -->
+        <block type="string" id="name" referential-anchor="bottom-right" anchor="bottom-left" autosize="yes">
+          <state>
+            <position>-15px -15px</position>
+            <size>600px 110px</size>
+            <rotation>270</rotation>
+          </state>
+          <font>
+            <name>Times New Roman</name>
+            <size>80px</size>
+            <minimum-size>48px</minimum-size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>0.6 0.6 0.6</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@title</string>
+        </block>
+        <!-- How to -->
+        <block type="string" referential-id="name" referential-anchor="bottom-left" anchor="bottom-left">
+          <state>
+            <size>180px 35px</size>
+            <rotation>270</rotation>
+          </state>
+          <font>
+            <name>Times New Roman</name>
+            <size>30px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+          </paragraph-style>
+          <foreground-color>0.8 0.8 0.8</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>How to make</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Ingredients ********** -->
+    <block type="group" id="ingredients">
+      <blocks>
+        <!-- Ingredients -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>180px 34px</size>
+          </state>
+          <state id="portrait">
+            <position>-200px 30px</position>
+          </state>
+          <state id="landscape">
+            <position>0px 30px</position>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>24px</size>
+          </font>
+          <columns>
+            <alignment>top</alignment>
+          </columns>
+          <paragraph-style>
+            <alignment>right</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.35 1.0 0.25 0.85</background-color>
+          <margins>0px 10px 0px 0px</margins>
+          <string>Ingredients</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- List Group -->
+    <block type="group" id="list" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>500px 40px</size>
+        <position>@listPosition</position>
+      </state>
+      <blocks>
+        <!-- point -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>0px 12px</position>
+          </state>
+          <image>Point.png</image>
+        </block>
+        <!-- text -->
+        <block type="string" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>30px 0px</position>
+            <size>470px 50px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>24px</size>
+            <minimum-size>20px</minimum-size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <string>@ingredients</string>
+        </block>
+      </blocks>
+    </block>
+  </function-blocks>
+</include>

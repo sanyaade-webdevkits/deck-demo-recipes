@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Front</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Photo Group ********** -->
+    <block type="function" source-id="photo">
+      <photo>Photos/Card2-Front.jpg</photo>
+      <photoBlur>Photos/Card2-Front-Blur.jpg</photoBlur>
+    </block>
+    <!-- *********** Recipe Level Group ********** -->
+    <block type="function" source-id="recipeLevel">
+      <level>Level  2</level>
+      <time>90  min.</time>
+    </block>
+    <!-- *********** Menu Name Gloup ********** -->
+    <!-- name Group Portrait -->
+    <block type="function" source-id="namePortrait">
+      <plateSize>360px 180px</plateSize>
+      <title>Clam Chowder</title>
+    </block>
+    <!-- Round Group Landscape -->
+    <block type="function" source-id="nameLandscape">
+      <title>Clam Chowder</title>
+    </block>
+    <!-- Ingredients -->
+    <block type="function" source-id="ingredients">
+    </block>
+    <!-- *********** Ingredients ********** -->
+    <block type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>500px 550px</size>
+        <position>220px 30px</position>
+      </state>
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- List Group 1 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 0px</listPosition>
+          <ingredients>2 tbs butter</ingredients>
+        </block>
+        <!-- List Group 2 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 50px</listPosition>
+          <ingredients>3 medium leeks, washed and trimmed</ingredients>
+        </block>
+        <!-- List Group 3 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 100px</listPosition>
+          <ingredients>2 tbs flour</ingredients>
+        </block>
+        <!-- List Group 4 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 150px</listPosition>
+          <ingredients>2-3 stalks of celery</ingredients>
+        </block>
+        <!-- List Group 5 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 200px</listPosition>
+          <ingredients>some sprigs of thyme</ingredients>
+        </block>
+        <!-- List Group 6 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 250px</listPosition>
+          <ingredients>2 bay leaves</ingredients>
+        </block>
+        <!-- List Group 7 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 300px</listPosition>
+          <ingredients>2 pounds of potatoes</ingredients>
+        </block>
+        <!-- List Group 8 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 350px</listPosition>
+          <ingredients>1 box of chicken broth</ingredients>
+        </block>
+        <!-- List Group 9 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 400px</listPosition>
+          <ingredients>1 can sweet corn kernels, rinsed</ingredients>
+        </block>
+        <!-- List Group 10 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 450px</listPosition>
+          <ingredients>2 tins of whole belly clams</ingredients>
+        </block>
+        <!-- List Group 11 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 500px</listPosition>
+          <ingredients>1 tin of minced clam meat</ingredients>
+        </block>
+        <!-- List Group 12 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 550px</listPosition>
+          <ingredients>3 bottles of clam juice</ingredients>
+        </block>
+        <!-- List Group 13 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 600px</listPosition>
+          <ingredients>1 cup heavy cream</ingredients>
+        </block>
+        <!-- List Group 14 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 650px</listPosition>
+          <ingredients>fresh cracked black pepper</ingredients>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

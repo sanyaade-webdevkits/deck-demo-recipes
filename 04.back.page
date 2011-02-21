@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Back</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Group Portrait ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>1.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>0.0</opacity>
+      </state>
+      <blocks>
+        <!-- Recipe name -->
+        <block type="function" source-id="name">
+          <title>Classic Brownies</title>
+        </block>
+        <!-- Ingredients -->
+        <block type="function" source-id="ingredients">
+          <listSize>668px 100px</listSize>
+          <list>1 cup confectionary sugar
+5 eggs
+100grs butter
+150grs chocolate 70% cocoa
+1 cup a little less than full with flour
+100 grs chopped nuts</list>
+        </block>
+        <!-- direction Group -->
+        <block type="group" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>668px 460px</size>
+            <position>30px 380px</position>
+          </state>
+          <blocks>
+            <!-- direction 1 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 0px</directionPos>
+              <direction>Whip two eggs with sugar, until they thicken and be with a clear color. </direction>
+              <number>1</number>
+            </block>
+            <!-- direction 2 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 80px</directionPos>
+              <direction>Melt the butter and the chocolate together.</direction>
+              <number>2</number>
+            </block>
+            <!-- direction 3 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 160px</directionPos>
+              <direction>Mix them whit the eggs and sugar and continue beating.</direction>
+              <number>3</number>
+            </block>
+            <!-- direction 4 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 240px</directionPos>
+              <direction>The chocolate and butter mixture is now melted and smooth. Allow to cool for a few minutes.</direction>
+              <number>4</number>
+            </block>
+            <!-- direction 5 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 320px</directionPos>
+              <direction>Put the nuts with the flour and mix them to the previous mixture.</direction>
+              <number>5</number>
+            </block>
+            <!-- direction 6 -->
+            <block type="function" source-id="direction">
+              <directionPos>0px 400px</directionPos>
+              <direction>Add one whole egg, and two egg yolks, the vanilla extract, and milk. Stir until combined.</direction>
+              <number>6</number>
+            </block>
+            <!-- direction 7 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>348px 0px</directionPos>
+              <direction>Take to the oven in a brownie badge for 15 minutes.</direction>
+              <number>7</number>
+            </block>
+            <!-- direction 8 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>348px 80px</directionPos>
+              <direction>Cut it after is cold one</direction>
+              <number>8</number>
+            </block>
+          </blocks>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Group Landscape ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- Photo 1 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 0px</photoPos>
+          <photo>Photos/Card4-Photo1.jpg</photo>
+          <number>1</number>
+        </block>
+        <!-- Photo 2 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 0px</photoPos>
+          <photo>Photos/Card4-Photo2.jpg</photo>
+          <number>2</number>
+        </block>
+        <!-- Photo 3 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 0px</photoPos>
+          <photo>Photos/Card4-Photo3.jpg</photo>
+          <number>3</number>
+        </block>
+        <!-- Photo 4 -->
+        <block type="function" source-id="photo">
+          <photoPos>741px 0px</photoPos>
+          <photo>Photos/Card4-Photo4.jpg</photo>
+          <number>4</number>
+        </block>
+        <!-- Photo 5 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 210px</photoPos>
+          <photo>Photos/Card4-Photo5.jpg</photo>
+          <number>5</number>
+        </block>
+        <!-- Photo 6 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 210px</photoPos>
+          <photo>Photos/Card4-Photo6.jpg</photo>
+          <number>6</number>
+        </block>
+        <!-- Photo 7 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 210px</photoPos>
+          <photo>Photos/Card4-Photo7.jpg</photo>
+          <number>7</number>
+        </block>
+        <!-- Photo 8 -->
+        <block type="function" source-id="photo">
+          <photoPos>741px 210px</photoPos>
+          <photo>Photos/Card4-Photo8.jpg</photo>
+          <number>8</number>
+        </block>
+        <!-- Photo 9 -->
+        <block type="function" source-id="blank">
+          <photoPos>0px 420px</photoPos>
+          <number>9</number>
+        </block>
+        <!-- Photo 10 -->
+        <block type="function" source-id="blank">
+          <photoPos>247px 420px</photoPos>
+          <number>10</number>
+        </block>
+        <!-- Photo 11 -->
+        <block type="function" source-id="blank">
+          <photoPos>494px 420px</photoPos>
+          <number>11</number>
+        </block>
+        <!-- Photo 12 -->
+        <block type="function" source-id="blank">
+          <photoPos>741px 420px</photoPos>
+          <number>12</number>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

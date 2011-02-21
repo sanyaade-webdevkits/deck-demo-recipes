@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Back</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Group Portrait ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>1.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>0.0</opacity>
+      </state>
+      <blocks>
+        <!-- Recipe name -->
+        <block type="function" source-id="name">
+          <title>Thai Basil Chicken</title>
+        </block>
+        <!-- Ingredients -->
+        <block type="function" source-id="ingredients">
+          <listSize>668px 170px</listSize>
+          <list>chicken breast
+red pepper
+garlic shoots / green garlic
+a fresh chilli
+a dab of chilli bean paste
+ginger
+lemon grass (dried is fine)
+sesame oil
+kecap manis
+one of those little baby limes
+fresh basil (handful)
+cashew nuts</list>
+        </block>
+        <!-- direction Group -->
+        <block type="group" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>668px 460px</size>
+            <position>30px 380px</position>
+          </state>
+          <blocks>
+            <!-- direction 1 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 0px</directionPos>
+              <direction>Mash together a clove of garlic, a wedge of ginger, a chilli, the zest of half the baby lime and some sesame oil into a paste.</direction>
+              <number>1</number>
+            </block>
+            <!-- direction 2 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 80px</directionPos>
+              <direction>Cut the chicken and mix it into the paste. Leave in the fridge for a little while to let the paste flavor the chicken.</direction>
+              <number>2</number>
+            </block>
+            <!-- direction 3 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 160px</directionPos>
+              <direction>Heat some oil in a wok. Soften up some chopped red peppers and add the chicken. </direction>
+              <number>3</number>
+            </block>
+            <!-- direction 4 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 240px</directionPos>
+              <direction>Move it about a bit, then add a dab of chilli bean paste and a dash of kecap manis - not too much as you don't want to darken the colour of the dish. </direction>
+              <number>4</number>
+            </block>
+            <!-- direction 5 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 320px</directionPos>
+              <direction>Add a couple of stalks of lemon grass. Season with a little salt and white pepper.</direction>
+              <number>5</number>
+            </block>
+            <!-- direction 6 -->
+            <block type="function" source-id="direction">
+              <directionPos>0px 400px</directionPos>
+              <direction>Add chopped garlic shoots and the cashew nuts. Throw it about a bit for another minute or so.</direction>
+              <number>6</number>
+            </block>
+            <!-- direction 7 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>348px 0px</directionPos>
+              <direction>For a saucier dish, you can add half a cup of chicken stock before this step.</direction>
+              <number>7</number>
+            </block>
+            <!-- direction 8 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>348px 80px</directionPos>
+              <direction>Remove the lemon grass stalks. </direction>
+              <number>8</number>
+            </block>
+            <!-- direction 9 -->
+            <block type="function" source-id="direction">
+              <directionPos>348px 160px</directionPos>
+              <direction>Turn off the heat and scatter over some roughly-torn basil leaves. Don't let the basil "cook" as it will go dark and look rubbish.</direction>
+              <number>9</number>
+            </block>
+            <!-- direction 10 -->
+            <block type="function" source-id="direction">
+              <directionPos>348px 240px</directionPos>
+              <direction>Plate up, squeeze over a little of the lime and serve. Optionally drizzle some chilli oil for a bit more fire / colour.</direction>
+              <number>10</number>
+            </block>
+          </blocks>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Group Landscape ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- Photo 1 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 0px</photoPos>
+          <photo>Photos/Card1-Photo1.jpg</photo>
+          <number>1</number>
+        </block>
+        <!-- Photo 2 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 0px</photoPos>
+          <photo>Photos/Card1-Photo2.jpg</photo>
+          <number>2</number>
+        </block>
+        <!-- Photo 3 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 0px</photoPos>
+          <photo>Photos/Card1-Photo3.jpg</photo>
+          <number>3</number>
+        </block>
+        <!-- Photo 4 -->
+        <block type="function" source-id="photo">
+          <photoPos>741px 0px</photoPos>
+          <photo>Photos/Card1-Photo4.jpg</photo>
+          <number>4</number>
+        </block>
+        <!-- Photo 5 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 210px</photoPos>
+          <photo>Photos/Card1-Photo5.jpg</photo>
+          <number>5</number>
+        </block>
+        <!-- Photo 6 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 210px</photoPos>
+          <photo>Photos/Card1-Photo6.jpg</photo>
+          <number>6</number>
+        </block>
+        <!-- Photo 7 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 210px</photoPos>
+          <photo>Photos/Card1-Photo7.jpg</photo>
+          <number>7</number>
+        </block>
+        <!-- Photo 8 -->
+        <block type="function" source-id="photo">
+          <photoPos>741px 210px</photoPos>
+          <photo>Photos/Card1-Photo8.jpg</photo>
+          <number>8</number>
+        </block>
+        <!-- Photo 9 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 420px</photoPos>
+          <photo>Photos/Card1-Photo9.jpg</photo>
+          <number>9</number>
+        </block>
+        <!-- Photo 10 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 420px</photoPos>
+          <photo>Photos/Card1-Photo10.jpg</photo>
+          <number>10</number>
+        </block>
+        <!-- Photo 11 -->
+        <block type="function" source-id="blank">
+          <photoPos>494px 420px</photoPos>
+        </block>
+        <!-- Photo 12 -->
+        <block type="function" source-id="blank">
+          <photoPos>741px 420px</photoPos>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

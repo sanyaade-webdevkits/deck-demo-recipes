@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Back</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Group Portrait ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>1.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>0.0</opacity>
+      </state>
+      <blocks>
+        <!-- Recipe name -->
+        <block type="function" source-id="name">
+          <title>Tiramisu</title>
+        </block>
+        <!-- Ingredients -->
+        <block type="function" source-id="ingredients">
+          <listSize>668px 150px</listSize>
+          <list>4 eggs, separated
+250g mascarpone
+200g caster sugar
+1 tsp vanilla extract
+1 cup freshly brewed, extra strong coffee (or 1 cup worth of espresso), cooled
+2 tbsp liquer (I like using either Kahlua or Marsala)
+enough sponge fingers to line the base of your dish in two layers
+A small block of semi-sweet chocolate (about 1 oz should do)</list>
+        </block>
+        <!-- direction Group -->
+        <block type="group" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>668px 460px</size>
+            <position>30px 380px</position>
+          </state>
+          <blocks>
+            <!-- direction 1 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 0px</directionPos>
+              <direction>Combine the liquor into the espresso.</direction>
+              <number>1</number>
+            </block>
+            <!-- direction 2 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 80px</directionPos>
+              <direction>Whisk the egg yolks with the sugar until pale and frothy. It should form ribbons when you pull the whisk through the mixture. Whisk in the mascarpone.</direction>
+              <number>2</number>
+            </block>
+            <!-- direction 3 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 160px</directionPos>
+              <direction>Use a mixer to whisk up the egg whites until soft peaks form. Fold this into the egg yolk and mascarpone mixture.</direction>
+              <number>3</number>
+            </block>
+            <!-- direction 4 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 240px</directionPos>
+              <direction>Dip a sponge finger briefly into the coffee and liquor mixture. Place it in the base of your dish. Repeat until the base is covered.</direction>
+              <number>4</number>
+            </block>
+            <!-- direction 5 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 320px</directionPos>
+              <direction>Spoon over the egg-and-cheese mix, using about half. Grate over some chocolate.</direction>
+              <number>5</number>
+            </block>
+            <!-- direction 6 -->
+            <block type="function" source-id="direction">
+              <directionPos>0px 400px</directionPos>
+              <direction>Make another layer of sponge fingers, and another layer of egg-and-cheese.  Grate the rest of the chocolate over.</direction>
+              <number>6</number>
+            </block>
+            <!-- direction 7 -->
+            <block type="function" source-id="direction">
+              <directionPos>348px 0px</directionPos>
+              <direction>Refrigerate for at least 3-4 hours or for up to one day, then serve!</direction>
+              <number>7</number>
+            </block>
+          </blocks>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Group Landscape ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- Photo 1 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 0px</photoPos>
+          <photo>Photos/Card3-Photo1.jpg</photo>
+          <number>1</number>
+        </block>
+        <!-- Photo 2 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 0px</photoPos>
+          <photo>Photos/Card3-Photo2.jpg</photo>
+          <number>2</number>
+        </block>
+        <!-- Photo 3 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 0px</photoPos>
+          <photo>Photos/Card3-Photo3.jpg</photo>
+          <number>3</number>
+        </block>
+        <!-- Photo 4 -->
+        <block type="function" source-id="photo">
+          <photoPos>741px 0px</photoPos>
+          <photo>Photos/Card3-Photo4.jpg</photo>
+          <number>4</number>
+        </block>
+        <!-- Photo 5 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 210px</photoPos>
+          <photo>Photos/Card3-Photo5.jpg</photo>
+          <number>5</number>
+        </block>
+        <!-- Photo 6 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 210px</photoPos>
+          <photo>Photos/Card3-Photo6.jpg</photo>
+          <number>6</number>
+        </block>
+        <!-- Photo 7 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 210px</photoPos>
+          <photo>Photos/Card3-Photo7.jpg</photo>
+          <number>7</number>
+        </block>
+        <!-- Photo 8 -->
+        <block type="function" source-id="blank">
+          <photoPos>741px 210px</photoPos>
+        </block>
+        <!-- Photo 9 -->
+        <block type="function" source-id="blank">
+          <photoPos>0px 420px</photoPos>
+        </block>
+        <!-- Photo 10 -->
+        <block type="function" source-id="blank">
+          <photoPos>247px 420px</photoPos>
+        </block>
+        <!-- Photo 11 -->
+        <block type="function" source-id="blank">
+          <photoPos>494px 420px</photoPos>
+        </block>
+        <!-- Photo 12 -->
+        <block type="function" source-id="blank">
+          <photoPos>741px 420px</photoPos>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

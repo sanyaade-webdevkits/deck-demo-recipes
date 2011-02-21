@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Front</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Photo Group ********** -->
+    <block type="function" source-id="photo">
+      <photo>Photos/Card1-Front.jpg</photo>
+      <photoBlur>Photos/Card1-Front-Blur.jpg</photoBlur>
+    </block>
+    <!-- *********** Recipe Level Group ********** -->
+    <block type="function" source-id="recipeLevel">
+      <level>Level  2</level>
+      <time>60  min.</time>
+    </block>
+    <!-- *********** Menu Name Gloup ********** -->
+    <!-- name Group Portrait -->
+    <block type="function" source-id="namePortrait">
+      <plateSize>420px 180px</plateSize>
+      <title>Thai Basil Chicken</title>
+    </block>
+    <!-- Round Group Landscape -->
+    <block type="function" source-id="nameLandscape">
+      <title>Thai Basil Chicken</title>
+    </block>
+    <!-- Ingredients -->
+    <block type="function" source-id="ingredients">
+    </block>
+    <!-- *********** Ingredients ********** -->
+    <block type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>500px 550px</size>
+        <position>220px 30px</position>
+      </state>
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- List Group 1 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 0px</listPosition>
+          <ingredients>Chicken breast</ingredients>
+        </block>
+        <!-- List Group 2 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 50px</listPosition>
+          <ingredients>Red pepper</ingredients>
+        </block>
+        <!-- List Group 3 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 100px</listPosition>
+          <ingredients>Garlic shoots / green garlic</ingredients>
+        </block>
+        <!-- List Group 4 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 150px</listPosition>
+          <ingredients>A fresh chilli</ingredients>
+        </block>
+        <!-- List Group 5 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 200px</listPosition>
+          <ingredients>A dab of chilli bean paste</ingredients>
+        </block>
+        <!-- List Group 6 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 250px</listPosition>
+          <ingredients>Ginger</ingredients>
+        </block>
+        <!-- List Group 7 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 300px</listPosition>
+          <ingredients>Lemon grass (dried is fine)</ingredients>
+        </block>
+        <!-- List Group 8 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 350px</listPosition>
+          <ingredients>Sesame oil</ingredients>
+        </block>
+        <!-- List Group 9 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 400px</listPosition>
+          <ingredients>Kecap manis</ingredients>
+        </block>
+        <!-- List Group 10 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 450px</listPosition>
+          <ingredients>One of those little baby limes</ingredients>
+        </block>
+        <!-- List Group 11 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 500px</listPosition>
+          <ingredients>Fresh basil (handful)</ingredients>
+        </block>
+        <!-- List Group 12 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 550px</listPosition>
+          <ingredients>Cashew nuts</ingredients>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

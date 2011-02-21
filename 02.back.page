@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Back</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Group Portrait ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>1.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>0.0</opacity>
+      </state>
+      <blocks>
+        <!-- Recipe name -->
+        <block type="function" source-id="name">
+          <title>Clam Chowder</title>
+        </block>
+        <!-- Ingredients -->
+        <block type="function" source-id="ingredients">
+          <listSize>668px 200px</listSize>
+          <list>2 tbs butter
+3 medium leeks, washed and trimmed
+2 tbs flour
+2-3 stalks of celery
+some sprigs of thyme
+2 bay leaves
+2 pounds of potatoes
+1 box of chicken broth
+1 can sweet corn kernels, rinsed
+2 tins of whole belly clams
+1 tin of minced clam meat
+3 bottles of clam juice
+1 cup heavy cream
+fresh cracked black pepper</list>
+        </block>
+        <!-- direction Group -->
+        <block type="group" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>668px 460px</size>
+            <position>30px 380px</position>
+          </state>
+          <blocks>
+            <!-- direction 1 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 0px</directionPos>
+              <direction>Melt the butter in a large soup pot.
+
+
+
+
+
+</direction>
+              <number>1</number>
+            </block>
+            <!-- direction 2 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 80px</directionPos>
+              <direction>  Then throw in the leeks and celery (chopped). After they are coated in butter, sprinkle the flour over them and mix well.</direction>
+              <number>2</number>
+            </block>
+            <!-- direction 3 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 160px</directionPos>
+              <direction>Let the celery and leeks cook for a while, then add all the potatoes, clam meat, liquids and herbs.  Let everything cook for an hour or more.</direction>
+              <number>3</number>
+            </block>
+            <!-- direction 4 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 240px</directionPos>
+              <direction>Fish out the bay leaves and sprigs of thyme.  Sometimes I even sprinkle the soup with a little bit of dried thyme.</direction>
+              <number>4</number>
+            </block>
+            <!-- direction 5 -->
+            <block type="function" source-id="direction-line">
+              <directionPos>0px 320px</directionPos>
+              <direction>Just before serving, generously douse with freshly cracked black pepper.</direction>
+              <number>5</number>
+            </block>
+          </blocks>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Group Landscape ********** -->
+    <block type="group">
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- Photo 1 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 0px</photoPos>
+          <photo>Photos/Card2-Photo1.jpg</photo>
+          <number>1</number>
+        </block>
+        <!-- Photo 2 -->
+        <block type="function" source-id="photo">
+          <photoPos>247px 0px</photoPos>
+          <photo>Photos/Card2-Photo2.jpg</photo>
+          <number>2</number>
+        </block>
+        <!-- Photo 3 -->
+        <block type="function" source-id="photo">
+          <photoPos>494px 0px</photoPos>
+          <photo>Photos/Card2-Photo3.jpg</photo>
+          <number>3</number>
+        </block>
+        <!-- Photo 4 -->
+        <block type="function" source-id="photo">
+          <photoPos>741px 0px</photoPos>
+          <photo>Photos/Card2-Photo4.jpg</photo>
+          <number>4</number>
+        </block>
+        <!-- Photo 5 -->
+        <block type="function" source-id="photo">
+          <photoPos>0px 210px</photoPos>
+          <photo>Photos/Card2-Photo5.jpg</photo>
+          <number>5</number>
+        </block>
+        <!-- Photo 6 -->
+        <block type="function" source-id="blank">
+          <photoPos>247px 210px</photoPos>
+          <number>6</number>
+        </block>
+        <!-- Photo 7 -->
+        <block type="function" source-id="blank">
+          <photoPos>494px 210px</photoPos>
+        </block>
+        <!-- Photo 8 -->
+        <block type="function" source-id="blank">
+          <photoPos>741px 210px</photoPos>
+        </block>
+        <!-- Photo 9 -->
+        <block type="function" source-id="blank">
+          <photoPos>0px 420px</photoPos>
+        </block>
+        <!-- Photo 10 -->
+        <block type="function" source-id="blank">
+          <photoPos>247px 420px</photoPos>
+        </block>
+        <!-- Photo 11 -->
+        <block type="function" source-id="blank">
+          <photoPos>494px 420px</photoPos>
+        </block>
+        <!-- Photo 12 -->
+        <block type="function" source-id="blank">
+          <photoPos>741px 420px</photoPos>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

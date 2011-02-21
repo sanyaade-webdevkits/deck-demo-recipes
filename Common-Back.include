@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+  <function-blocks>
+    <!-- *********** Recipe Name ********** -->
+    <block id="name" type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>668px 90px</size>
+        <position>30px 30px</position>
+      </state>
+      <blocks>
+        <!-- how to -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>120px 30px</size>
+          </state>
+          <font>
+            <name>Times New Roman</name>
+            <size>20px</size>
+          </font>
+          <columns>
+            <alignment>top</alignment>
+          </columns>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>0.4 0.4 0.4</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>How to make</string>
+        </block>
+        <!-- name -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <position>0px 20px</position>
+            <size>668px 70px</size>
+          </state>
+          <font>
+            <name>Times New Roman</name>
+            <size>60px</size>
+            <minimum-size>38px</minimum-size>
+          </font>
+          <columns>
+            <alignment>top</alignment>
+          </columns>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>0.4 0.4 0.4</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@title</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Ingredients ********** -->
+    <block id="ingredients" type="group">
+      <blocks>
+        <!-- Ingredients -->
+        <block type="string" id="Ingredients-header" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>150px 30px</size>
+            <position>30px 150px</position>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>21px</size>
+          </font>
+          <columns>
+            <alignment>top</alignment>
+          </columns>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>0.15 0.8 0.05</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>Ingredients</string>
+        </block>
+        <!-- list -->
+        <block type="string" referential-id="Ingredients-header" referential-anchor="bottom-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>0px 5px</position>
+            <size>@listSize</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>16px</size>
+          </font>
+          <columns count="2">
+            <alignment>top</alignment>
+            <spacing>20px</spacing>
+          </columns>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+            <after-spacing>8px</after-spacing>
+          </paragraph-style>
+          <foreground-color>0.0 0.0 0.0</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@list</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Direction & Line ********** -->
+    <block id="direction-line" type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <position>@directionPos</position>
+        <size>320px 80px</size>
+      </state>
+      <blocks>
+        <!-- direction -->
+        <block type="string" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <size>320px 65px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue</name>
+            <size>16px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+            <line-height-multiple>1.0</line-height-multiple>
+            <first-line-head-indent>25px</first-line-head-indent>
+          </paragraph-style>
+          <foreground-color>0.0 0.0 0.0</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@direction</string>
+        </block>
+        <!-- number -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>20px 18px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>15px</size>
+          </font>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.25 0.9 0.15</background-color>
+          <string>@number</string>
+        </block>
+        <!--  line  -->
+        <block type="pattern" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>320px 1px</size>
+            <position>0px 70px</position>
+          </state>
+          <image>Dot-Pattern.png</image>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Bottom Direction ********** -->
+    <block id="direction" type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <position>@directionPos</position>
+        <size>320px 60px</size>
+      </state>
+      <blocks>
+        <!-- direction -->
+        <block type="string" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <size>320px 60px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue</name>
+            <size>16px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+            <line-height-multiple>1.0</line-height-multiple>
+            <first-line-head-indent>25px</first-line-head-indent>
+          </paragraph-style>
+          <foreground-color>0.0 0.0 0.0</foreground-color>
+          <background-color>1.0 1.0 1.0</background-color>
+          <string>@direction</string>
+        </block>
+        <!-- number -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>20px 18px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>15px</size>
+          </font>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.25 0.9 0.15</background-color>
+          <string>@number</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Direction Photo ********** -->
+    <block id="photo" type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <position>@photoPos</position>
+        <size>246px 209px</size>
+      </state>
+      <blocks>
+        <!-- Photo -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <image>@photo</image>
+        </block>
+        <!-- number -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>20px 18px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>15px</size>
+          </font>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.25 0.9 0.15</background-color>
+          <string>@number</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Blank Image ********** -->
+    <block id="blank" type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+      <state>
+        <position>@photoPos</position>
+      </state>
+      <image>Blank.jpg</image>
+    </block>
+  </function-blocks>
+</include>

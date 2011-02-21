@@ -1,0 +1,5 @@
+This repository contains an example deck for the Decks iPad application by Cooliris. Decks are simply directories containing .page and .include files written using the PageKit XML format along with graphic assets.
+
+This example represents the simplest type of deck that can be created where each card is made of unique pair of front and back PageKit pages. It also demonstrates how to re-use PageKit blocks among multiple pages using .include files and functions.
+
+See http://developer.decksapp.com for documentation about creating decks and the PageKit XML format.

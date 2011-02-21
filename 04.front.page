@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <include>Common-Front</include>
+  <background-color>1.0 1.0 1.0</background-color>
+  <blocks>
+    <!-- *********** Photo Group ********** -->
+    <block type="function" source-id="photo">
+      <photo>Photos/Card4-Front.jpg</photo>
+      <photoBlur>Photos/Card4-Front-Blur.jpg</photoBlur>
+    </block>
+    <!-- *********** Recipe Level Group ********** -->
+    <block type="function" source-id="recipeLevel">
+      <level>Level  3</level>
+      <time>30  min.</time>
+    </block>
+    <!-- *********** Menu Name Gloup ********** -->
+    <!-- name Group Portrait -->
+    <block type="function" source-id="namePortrait">
+      <plateSize>440px 180px</plateSize>
+      <title>Classic Brownies</title>
+    </block>
+    <!-- Round Group Landscape -->
+    <block type="function" source-id="nameLandscape">
+      <title>Classic Brownies</title>
+    </block>
+    <!-- Ingredients -->
+    <block type="function" source-id="ingredients">
+    </block>
+    <!-- *********** Ingredients ********** -->
+    <block type="group" referential-anchor="top-left" anchor="top-left">
+      <state>
+        <size>500px 550px</size>
+        <position>220px 30px</position>
+      </state>
+      <state id="portrait">
+        <opacity>0.0</opacity>
+      </state>
+      <state id="landscape">
+        <opacity>1.0</opacity>
+      </state>
+      <blocks>
+        <!-- List Group 1 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 0px</listPosition>
+          <ingredients>1 cup confectionary sugar</ingredients>
+        </block>
+        <!-- List Group 2 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 50px</listPosition>
+          <ingredients>5 eggs</ingredients>
+        </block>
+        <!-- List Group 3 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 100px</listPosition>
+          <ingredients>100grs butter</ingredients>
+        </block>
+        <!-- List Group 4 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 150px</listPosition>
+          <ingredients>150grs chocolate 70% cocoa</ingredients>
+        </block>
+        <!-- List Group 5 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 200px</listPosition>
+          <ingredients>1 cup a little less than full with flour</ingredients>
+        </block>
+        <!-- List Group 6 -->
+        <block type="function" source-id="list">
+          <listPosition>0px 250px</listPosition>
+          <ingredients>100 grs chopped nuts</ingredients>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>
